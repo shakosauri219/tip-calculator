@@ -1,0 +1,247 @@
+body {
+    background: #C5E4E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Space Mono', sans-serif;
+}
+
+.main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 25px 25px 0px 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    margin-top: 50px;
+}
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 311px;
+    padding: 0px 32px;
+}
+
+.bill-section {
+    width: 311px;
+    margin-top: 32px;
+}
+
+.bill-section input {
+    padding: 0px;
+    background: #F3F9FA;
+    border-radius: 5px;
+    height: 48px;
+    width: 296px;
+    padding-right: 17px;
+    border: 0px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #00474B;
+    background-image: url(./images/icon-dollar.svg);
+    background-position: left 15.5px top 16.9px;
+    background-repeat: no-repeat;
+    margin-top: 6px;
+}
+
+#bill-input:hover {
+    border: 2px solid #26C2AE;
+}
+
+h1 {
+    font-family: 'Space Mono', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;    
+    color: #5E7A7D;
+}
+
+.select-tip {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.select-tip h1 {
+    align-self: flex-start;
+}
+
+.tip-perc {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 17px;
+    row-gap: 16px;
+}
+
+.tip-perc button, .tip-perc input {
+    height: 48px;
+    width: 146.6311798095703px;
+    border-radius: 5px;
+    border: 0px;
+    text-align: center;
+    font-family: 'Space Mono', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #00474B;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.tip-perc #percent-three {
+    background: #26C2AE;
+    color: #00474B;
+    padding: 0px;
+}
+
+.tip-perc input {
+    background: #F3F9FA;
+    color: #00474B;
+}
+
+.tip-perc input:hover {
+    border: 2px solid #26C2AE;
+}
+
+.people-section {
+    margin-top: 32px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+   margin: 0;
+}
+
+#number-people {
+    padding: 0px;
+    background: #F3F9FA;
+    border-radius: 5px;
+    height: 48px;
+    width: 296px;
+    padding-right: 17px;
+    border: 0px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #00474B;
+    background-image: url(./images/icon-person.svg);
+    background-position: left 15.5px top 16.9px;
+    background-repeat: no-repeat;
+}
+
+
+.calculation {
+    margin-top: 32px;
+    width: 283px;
+    background: #00474B;
+    padding: 0px 22px;
+    border-radius: 15px;
+}
+
+.calculation div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-div {
+    margin-top: 39px;
+    margin-bottom: 25px;
+}
+
+.calculation h1 {
+    color: #FFFFFF;
+
+}
+
+.calculation span {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    letter-spacing: -0.666667px;
+    color: #26C2AE;
+}
+
+.calculation h1 span {
+    color: #7F9D9F;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+#reset {
+    height: 48px;
+    width: 281px;
+    border-radius: 5px;
+    border: 0px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00474B;
+    background: #26C2AE;
+    margin-top: 35px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+@media screen  and (min-width:1440px) {
+    header {
+        margin-top: 163px;
+    }
+
+    .main {
+        width: 63.8%;
+        margin-top: 88px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container-inputs {
+        padding: 0px;
+    }
+
+    .select-tip {
+        width: 379px;
+    }
+
+    .tip-perc button, .tip-perc input {
+        width: 117px;
+    }
+
+    .bill-section {
+        width: 379px;
+    }
+
+    .tip-perc {
+        grid-template-columns: auto auto auto;
+        column-gap: 14px;
+    }
+
+
+
+
+}
+

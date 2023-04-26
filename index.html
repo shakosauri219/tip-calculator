@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+  <header>
+    <img src="./images/logo.svg" alt="logo">
+  </header>
+
+  <section class="main">
+    <div class="container-inputs">
+      <section class="bill-section">
+        <h1>Bill</h1>
+        <input placeholder="0" id="bill-input" maxlength="5" type="text">
+      </section>
+  
+      <section class="select-tip">
+        <h1>Select Tip %</h1>
+        <div class="tip-perc">
+          <button id="percent-one">5%</button>
+          <button id="percent-two">10%</button>
+          <button id="percent-three">15%</button>
+          <button id="percent-four">25%</button>
+          <button id="percent-five">50%</button>
+          <input id="custom-percent" placeholder="Custom" type="text">
+        </div>
+      </section>
+  
+      <section class="people-section">
+        <div>
+          <h1>Number of People</h1>
+          <input placeholder="0" type="number" id="number-people">
+        </div>
+      </section>
+    </div>
+
+    <div class="calculation">
+      <div class="tip-div">
+        <h1>Tip Amount <br> <span>/ person</span></h1>
+        <span id="tip">$0.00</span>
+      </div>
+      <div class="total-div">
+        <h1>Total <br> <span>/ person</span></h1>
+        <span id="total">$0.00</span>
+      </div>
+
+      <button id="reset">RESET</button>
+    </div>
+    
+  </section>
+
+  
+</body>
+</html>
