@@ -104,11 +104,11 @@ h1 {
     padding: 0px;
 }
 
-.tip-perc #percent-three {
-    background: #26C2AE;
+.tip-perc button:hover {
+    background: #9FE8DF;
     color: #00474B;
-    padding: 0px;
 }
+
 
 .tip-perc input {
     background: #F3F9FA;
@@ -208,19 +208,28 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen  and (min-width:1440px) {
+    body {
+        padding-bottom: 239px;
+    }
+
     header {
-        margin-top: 163px;
+        margin-top: 120px;
     }
 
     .main {
-        width: 63.8%;
         margin-top: 88px;
         flex-direction: row;
-        justify-content: space-between;
+        column-gap: 48px;
+        align-items: unset;
+        padding: 32px 32px 32px 48px;
+        border-radius: 25px;
     }
 
     .container-inputs {
         padding: 0px;
+        width: auto;
+        margin-top: 12px;
+        margin-bottom: 12px;
     }
 
     .select-tip {
@@ -232,7 +241,12 @@ input::-webkit-inner-spin-button {
     }
 
     .bill-section {
+        margin: 0px;
         width: 379px;
+    }
+
+    .bill-section input {
+        width: 362px;
     }
 
     .tip-perc {
@@ -240,7 +254,29 @@ input::-webkit-inner-spin-button {
         column-gap: 14px;
     }
 
+    .people-section {
+        width: 379px;
+    }
 
+    #number-people {
+        width: 362px;
+    }
+
+    .calculation {
+        margin: 0px;
+        width: 333px;
+    }
+
+    .calculation span {
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -1px;
+    }
+
+    #reset {
+        margin-top: 132px;
+        width: 333px;
+    }
 
 
 }
