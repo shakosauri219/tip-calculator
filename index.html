@@ -21,24 +21,27 @@
     <div class="container-inputs">
       <section class="bill-section">
         <h1>Bill</h1>
-        <input placeholder="0" id="bill-input" maxlength="5" type="text">
+        <input placeholder="0" id="bill-input" maxlength="5" type="number">
       </section>
   
       <section class="select-tip">
         <h1>Select Tip %</h1>
         <div class="tip-perc">
-          <button id="percent-one">5%</button>
-          <button id="percent-two">10%</button>
-          <button id="percent-three">15%</button>
-          <button id="percent-four">25%</button>
-          <button id="percent-five">50%</button>
+          <button onclick="onClickPrecent(5)" class="percent one">5%</button>
+          <button onclick="onClickPrecent(10)" class="percent two">10%</button>
+          <button onclick="onClickPrecent(15)" class="percent three">15%</button>
+          <button onclick="onClickPrecent(25)" class="percent four">25%</button>
+          <button onclick="onClickPrecent(50)" class="percent five">50%</button>
           <input id="custom-percent" placeholder="Custom" type="text">
         </div>
       </section>
   
       <section class="people-section">
         <div>
-          <h1>Number of People</h1>
+          <div class="error-and-people">
+            <h1 class="numberofppl">Number of People</h1>
+            <span id="error-text">Can't be zero</span>
+          </div>
           <input placeholder="0" type="number" id="number-people">
         </div>
       </section>
@@ -59,6 +62,6 @@
     
   </section>
 
-  
+  <script src="main.js"></script>
 </body>
 </html>
